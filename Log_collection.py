@@ -138,7 +138,7 @@ def logCollect():
                         print e
             
             # AssetData
-            fout.write('==Asset reprot started.\n')
+            fout.write('==Asset report started.\n')
             asset_srcpath = srcpath + os.sep + 'AssetData'
             asset_dstpath = dstpath + os.sep + 'AssetData'
             if os.path.isdir(asset_srcpath) and os.path.isdir(asset_dstpath):
@@ -152,7 +152,7 @@ def logCollect():
                         print e
             
             # LOG
-            fout.write('==LOG reprot started.\n')
+            fout.write('==LOG report started.\n')
             log_srcpath = srcpath + os.sep + 'LOG'
             log_dstpath = dstpath + os.sep + 'LOG'
             if os.path.isdir(log_srcpath) and os.path.isdir(log_dstpath):
@@ -166,7 +166,7 @@ def logCollect():
                         print e
             
             # MTDL
-            fout.write('==MTDL started.\n')
+            fout.write('==MTDL report started.\n')
             mtdl_srcpath = srcpath + os.sep + 'MTDL'
             mtdl_dstpath = dstpath + os.sep + 'MTDL'
             if os.path.isdir(mtdl_srcpath) and os.path.isdir(mtdl_dstpath):
@@ -184,7 +184,7 @@ def logCollect():
                         print e
             
             # ZIP
-            fout.write('==ZIP started.\n')
+            fout.write('==ZIP report started.\n')
             zip_srcpath = srcpath + os.sep + 'ZIP'
             zip_dstpath = dstpath + os.sep + 'ZIP'
             if os.path.isdir(zip_srcpath) and os.path.isdir(zip_dstpath):
