@@ -1,20 +1,36 @@
-def insertion_Sort(L):
-    """Record the values in L from smallest to largest."""
+"""
+Insertion Sort Overview:
+    ------------------------
+    Uses insertion of elements in to the list to sort the list.
+
+    Time Complexity: O(n**2)
+
+    Space Complexity: O(n) total
+
+    Stable: Yes
+"""
+
+
+def sort(l):
+    """Record the values in l from smallest to largest."""
     
     i = 0
-    while i != len(L):
-        insert(L ,i)
-        i = i + 1
+    while i != len(l):
+        insert(l, i)
+        i += 1
 
-def insert(L, b):
-    """ Insert L[b] where it belongs in L[0:b+1];
-        L[0:b-1] must already be sorted."""
+    return l
+
+
+def insert(l, b):
+    """ Insert l[b] where it belongs in l[0:b+1];
+        l[0:b-1] must already be sorted."""
         
-    # Find where to insert L[b] by searching backwards from L[b] for a smaller item.
+    # Find where to insert l[b] by searching backwards from l[b] for a smaller item.
     i = b 
-    while i != 0 and L[i - 1] >= L[b]:
-        i = i - 1
-    # Move L[b] to indes i ,shifting the following values to the right.
-    value = L[b]
-    del L[b]
-    L.insert(i, value)
+    while i != 0 and l[i - 1] >= l[b]:
+        i -= 1
+    # Move l[b] to index i ,shifting the following values to the right.
+    value = l[b]
+    del l[b]
+    l.insert(i, value)
